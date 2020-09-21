@@ -1,12 +1,12 @@
 import React from "react";
 import { HashRouter as Router, Route } from "react-router-dom";
-import AuthLogin from "routes/AuthLogin";
+import AuthForm from "routes/AuthForm";
 
 const AppRouter = () => {
   return (
     <Router>
       <Route exact path="/authLogin">
-        <AuthLogin />
+        <AuthForm />
       </Route>
     </Router>
   );

@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-const AuthForm = () => {
+const AuthLogin = () => {
   return (
     <>
       <form className="login">
@@ -26,4 +25,4 @@ const AuthForm = () => {
   );
 };
 
-export default AuthForm;
+export default AuthLogin;

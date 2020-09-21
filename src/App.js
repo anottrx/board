@@ -1,11 +1,11 @@
 import React from "react";
 import "./mainBoard.css";
-import AuthForm from "./components/AuthForm";
+import AuthLogin from "./components/AuthLogin";
 
 function App() {
   return (
     <>
-      <AuthForm />
+      <AuthLogin />
       <br />
       <button>글쓰기</button>
     </>
