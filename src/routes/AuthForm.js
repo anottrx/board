@@ -4,6 +4,7 @@ import AuthLogin from "components/AuthLogin";
 const AuthForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [nickname, setNickname] = useState("");
   const [newAccount, setNewAccount] = useState(true);
   const [error, setError] = useState("");
 
@@ -49,7 +50,18 @@ const AuthForm = () => {
         />
       </label>
       <br />
-      <button>회원가입</button>
+      <label>
+        닉네임
+        <input
+          name="nickname"
+          type="text"
+          required
+          value={nickname}
+          onChange={onChange}
+        />
+      </label>
+      <br />
+      <button>회원가입완료</button>
       {error && <span>{error}</span>}
     </form>
   );
