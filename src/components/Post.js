@@ -14,7 +14,7 @@ const Post = () => {
         내용
         <input name="post" type="text" required value={post} />
       </label>
-      <button>완료</button>
+      <button>올리기</button>
     </form>
   );
 };
