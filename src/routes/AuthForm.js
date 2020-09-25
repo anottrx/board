@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import AuthLogin from "components/AuthLogin";
 
+// 회원가입
 const AuthForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

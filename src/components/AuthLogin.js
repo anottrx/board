@@ -1,5 +1,6 @@
 import React from "react";
 
+// 로그인
 const AuthLogin = () => {
   return (
     <>
@@ -16,10 +17,6 @@ const AuthLogin = () => {
         <br />
         <button>로그인</button>
         <button>회원가입</button>
-        <label>
-          <input type="checkbox" name="alwaysLogin" />
-          자동 로그인
-        </label>
       </form>
     </>
   );

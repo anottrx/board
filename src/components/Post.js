@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+// 게시판 포스팅 글쓰기
 const Post = () => {
   const [title, setTitle] = useState("");
   const [post, setPost] = useState("");

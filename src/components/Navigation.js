@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Navigation = () => {
+function Navigation() {
   return (
     <div>
-      <Link to="./AuthForm.js">AuthForm</Link>
+      <Link to="/AuthForm">AuthForm</Link>
+      <br />
+      <Link to="/AuthLogin">AuthLogin</Link>
     </div>
   );
-};
+}
 
 export default Navigation;
