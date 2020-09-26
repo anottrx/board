@@ -10,14 +10,13 @@ function App() {
   return (
     <>
       <LiveClock />
-      <br />
+      <HashRouter>
+        <Navigation />
+        <Route path="/AuthForm" component={AuthForm} />
+      </HashRouter>
       <br />
       <Board />
       <br />
-      <br />
-      <HashRouter>
-        <Navigation />
-      </HashRouter>
     </>
   );
 }
