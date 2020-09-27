@@ -4,6 +4,7 @@ import React, { useState } from "react";
 const AuthForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [password2, setPassword2] = useState("");
   const [newAccount, setNewAccount] = useState(true);
   const [error, setError] = useState("");
 
@@ -15,10 +16,15 @@ const AuthForm = () => {
       setEmail(value);
     } else if (name === "password") {
       setPassword(value);
+    } else if (name === "password2") {
+      setPassword2(value);
     }
   };
   const onSubmit = (event) => {
     event.preventDefault();
+    if ({ password } !== { password2 }) {
+      setError("비밀번호가 다릅니다");
+    }
     try {
     } catch (error) {
       setError(error.message);
@@ -26,7 +32,7 @@ const AuthForm = () => {
   };
 
   return (
-    <form>
+    <form onSubmit={onSubmit}>
       <label>
         아이디
         <input
@@ -49,7 +55,19 @@ const AuthForm = () => {
         />
       </label>
       <br />
-      <button>회원가입</button>
+      <label>
+        비밀번호 재입력
+        <input
+          name="password2"
+          type="password"
+          required
+          value={password2}
+          onChange={onChange}
+        />
+      </label>
+      <br />
+      <input type="submit" />
+      {/* <button>회원가입</button> */}
       {error && <span>{error}</span>}
     </form>
   );
