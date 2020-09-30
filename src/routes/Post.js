@@ -11,10 +11,12 @@ const Post = () => {
         제목
         <input name="title" type="text" required value={title} />
       </label>
+      <br />
       <label>
         내용
         <input name="post" type="text" required value={post} />
       </label>
+      <br />
       <button>올리기</button>
     </form>
   );
