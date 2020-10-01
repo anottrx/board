@@ -1,6 +1,5 @@
 import React from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
-import Navigation from "components/Navigation";
 import AuthForm from "routes/AuthForm";
 import AuthLogin from "./AuthLogin";
 
