@@ -5,7 +5,6 @@ const AuthForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [password2, setPassword2] = useState("");
-  const [newAccount, setNewAccount] = useState(true);
   const [error, setError] = useState("");
 
   const onChange = (event) => {
@@ -67,7 +66,6 @@ const AuthForm = () => {
       </label>
       <br />
       <input type="submit" />
-      {/* <button>회원가입</button> */}
       {error && <span>{error}</span>}
     </form>
   );
